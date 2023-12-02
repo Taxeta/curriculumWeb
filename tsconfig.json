@@ -23,6 +23,6 @@
     "noFallthroughCasesInSwitch": true,
     "types": ["vitest/globals"]
   },
-  "include": ["src"],
+  "include": ["src/**/*.tsx", "src/**/*.ts", "src/**/*.jpg", "src/**/*.png"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

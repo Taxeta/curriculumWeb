@@ -1,0 +1,6 @@
+.horitzontal-bar {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 25px 25px 50px;
+  gap: 25px;
+}

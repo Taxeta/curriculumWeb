@@ -1,0 +1,8 @@
+.body-container {
+  padding: 0 25px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}

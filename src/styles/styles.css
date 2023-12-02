@@ -1,8 +1,8 @@
 :root {
-  --primary-color: #d4d2cb;
+  --primary-color: linear-gradient(35deg, #f7f5e6, #52658f, #333a56);
   --secondary-color: #264867;
   --black: rgb(27, 27, 27);
-  --white: #ffffff;
+  --white: #f1e6e6;
   --primary-font: "";
   --secondary-font: "";
 }
@@ -22,7 +22,9 @@ body {
   margin: 0;
   font-family: var(--secondary-font);
   min-height: 100vh;
+  color: var(--white);
   background-size: contain;
+  background: var(--primary-color);
 }
 
 ul,
