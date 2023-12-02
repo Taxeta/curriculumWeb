@@ -14,7 +14,7 @@ export default defineConfig({
       provider: "v8",
       reporter: ["lcov", "text"],
       all: true,
-      include: ["**/src/**/*.{ts,tsx}"],
+      include: ["**/src/**/*.{ts,tsx}", "**/scr/assets/**/*.{png,jpg}"],
       exclude: [
         "**/*.test.{ts,tsx}",
         "**/types.ts",
