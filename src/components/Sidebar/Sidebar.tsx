@@ -2,11 +2,11 @@ import "./Sidebar.css";
 
 const Sidebar = (): React.ReactElement => {
   return (
-    <ul className="horitzontal-bar">
-      <li>Presentación</li>
-      <li>Proyectos</li>
-      <li>Experiencia</li>
-      <li>Contacto</li>
+    <ul className="horitzontal-nav">
+      <li className="horitzontal-nav--items">Presentación</li>
+      <li className="horitzontal-nav--items">Experiencia</li>
+      <li className="horitzontal-nav--items">Proyectos</li>
+      <li className="horitzontal-nav--items">Contacto</li>
     </ul>
   );
 };

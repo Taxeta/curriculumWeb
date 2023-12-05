@@ -1,0 +1,10 @@
+.info-contact {
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+  gap: 25px;
+  color: var(--black);
+  width: 100vh;
+  height: 50vh;
+  padding: 15px;
+}

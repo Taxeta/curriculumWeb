@@ -1,0 +1,52 @@
+.projects {
+  display: grid;
+  margin: 50px 0 50px 250px;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
+}
+
+.projects-title {
+  display: flex;
+  margin: 25px 25px 25px 250px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.title-project {
+  margin-top: 15px;
+  font-family: var(--secondary-font);
+  font-weight: bold;
+}
+
+.images-container {
+  width: 50%;
+  height: 40%;
+  max-height: 50%;
+  max-width: 80%;
+  margin-bottom: 25px;
+}
+
+.container-galaxyproject {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  gap: 25px;
+  text-align: center;
+}
+
+.solid-button {
+  border: hidden;
+  border-radius: 25px;
+  padding: 10px;
+  background-color: rgb(62, 113, 168);
+  color: white;
+  margin: 15px;
+}
+
+.experience-content {
+  min-height: 100vh;
+}

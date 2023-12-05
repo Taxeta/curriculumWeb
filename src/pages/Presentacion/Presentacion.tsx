@@ -1,15 +1,22 @@
 import fotoCV from "../../assets/fotoCV.jpg";
+import { motion } from "framer-motion";
 import "./Presentacion.css";
 
 const Presentacion = (): React.ReactElement => {
   return (
     <section className="presentacion">
-      <img
+      <motion.img
         className="presentacon-img"
         src={fotoCV}
         alt="foto jose manuel"
         width={"260"}
         height={"270"}
+        transition={{ duration: 3 }}
+        animate={{
+          scale: [1, 1, 1.2, 1.2, 1, 1],
+          rotate: [0, 1, 30, 0, 30, 0],
+          borderRadius: ["0%", "0%", "10%", "30%", "40%", "50%"],
+        }}
       />
       <div className="presentacion-container">
         <p className="presentacion__introduccion">
@@ -17,8 +24,8 @@ const Presentacion = (): React.ReactElement => {
         </p>
         <h1 className="presentacion__titulo">Jose Manuel Vera Guerrero</h1>
         <h2 className="presentacion__subtitulo">
-          Junior especialista Front-end, enfocado en Stack MERN aunque soy capaz
-          de adaptarme a cualquier tecnología.
+          Junior especialista Front-end, enfocado en Stack MERN aunque capaz de
+          adaptarme a cualquier tecnología.
         </h2>
         <article className="presentacion__parrafo">
           <p>
