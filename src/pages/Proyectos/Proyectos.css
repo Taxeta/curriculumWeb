@@ -36,17 +36,38 @@
   align-items: center;
   gap: 25px;
   text-align: center;
+  min-height: 650px;
 }
 
-.solid-button {
+.solid-icon-button {
+  display: flex;
   border: hidden;
-  border-radius: 25px;
+  border-radius: 50%;
   padding: 10px;
-  background-color: rgb(62, 113, 168);
-  color: white;
+  background-color: white;
   margin: 15px;
+  align-items: center;
 }
 
 .experience-content {
   min-height: 100vh;
+}
+
+.icon-button {
+  display: flex;
+  border: hidden;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.buttons-container {
+  display: flex;
 }

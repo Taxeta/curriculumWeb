@@ -7,6 +7,10 @@ import carrito1 from "../../assets/carrito-compra1.png";
 import carrito2 from "../../assets/carrito-compra2.png";
 import carrito3 from "../../assets/carrito-compra4.png";
 import cartVideo from "../../assets/carritoVideo.mp4";
+import github from "../../assets/github.png";
+import app from "../../assets/app.png";
+import nextarrow from "../../assets/next-arrow.png";
+import previousarrow from "../../assets/previous-arrow.png";
 import "./Proyectos.css";
 
 interface projectsStructure {
@@ -62,6 +66,26 @@ const Proyectos = (): React.ReactElement => {
       <div className="projects">
         <div className="container-galaxyproject">
           <span className="title-project">Galaxy Padel Project</span>
+          <div className="icons">
+            <a
+              href="https://github.com/Taxeta/GalaxyPadel-front.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={github} alt="github icon" width={28} height={28} />
+              </button>
+            </a>
+            <a
+              href="https://galaxypadel.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={app} alt="app icon" width={28} height={28} />
+              </button>
+            </a>
+          </div>
           <AnimatePresence mode="wait">
             {projectGalaxyData.map(
               (project, position) =>
@@ -91,18 +115,46 @@ const Proyectos = (): React.ReactElement => {
           </AnimatePresence>
           <div className="buttons-container">
             <button
-              className="solid-button"
+              className="solid-icon-button"
               onClick={handleGalaxyPreviousButton}
             >
-              {"<"}
+              <img
+                src={previousarrow}
+                alt="previous arrow"
+                width={38}
+                height={38}
+              />
             </button>
-            <button className="solid-button" onClick={handleGalaxyNextButton}>
-              {">"}
+            <button
+              className="solid-icon-button"
+              onClick={handleGalaxyNextButton}
+            >
+              <img src={nextarrow} alt="next arrow" width={38} height={38} />
             </button>
           </div>
         </div>
         <div className="container-galaxyproject">
           <span className="title-project">Shopping Cart Project</span>
+          <div className="icons">
+            <a
+              href="https://github.com/Taxeta/shoppingCart.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={github} alt="github icon" width={28} height={28} />
+              </button>
+            </a>
+            <a
+              href="https://phone-cart-tecnicalprobe.netlify.app/phones"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={app} alt="app icon" width={28} height={28} />
+              </button>
+            </a>
+          </div>
           <AnimatePresence mode="wait">
             {projectShoppData.map(
               (project, position) =>
@@ -130,18 +182,24 @@ const Proyectos = (): React.ReactElement => {
                 ),
             )}
           </AnimatePresence>
+
           <div className="buttons-container">
             <button
-              className="solid-button"
+              className="solid-icon-button"
               onClick={handleShoppCartPreviousButton}
             >
-              {"<"}
+              <img
+                src={previousarrow}
+                alt="previous arrow"
+                width={38}
+                height={38}
+              />
             </button>
             <button
-              className="solid-button"
+              className="solid-icon-button"
               onClick={handleShoppCartNextButton}
             >
-              {">"}
+              <img src={nextarrow} alt="next arrow" width={38} height={38} />
             </button>
           </div>
         </div>
