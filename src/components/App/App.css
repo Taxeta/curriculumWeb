@@ -1,8 +1,19 @@
 .body-container {
-  padding: 0 25px;
+  padding: 25px;
+  width: 100%;
 }
 
 .main-container {
   display: flex;
   flex-direction: row;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: rgba(168, 215, 234, 0.988);
+  transform-origin: 0%;
 }

@@ -3,8 +3,9 @@
   --secondary-color: #264867;
   --black: rgb(27, 27, 27);
   --white: #f1e6e6;
-  --primary-font: "";
-  --secondary-font: "";
+  --primary-font: "Familjen Grotesk", sans-serif;
+  --secondary-font: "Satoshi", sans-serif;
+  --spot-image: url("../assets/puntos.png");
 }
 
 *,
@@ -21,9 +22,8 @@ html {
 body {
   margin: 0;
   font-family: var(--secondary-font);
-  min-height: 100vh;
   color: var(--white);
-  background-size: contain;
+  background-size: auto;
   background: var(--primary-color);
 }
 
@@ -32,6 +32,7 @@ li {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 10px;
 }
 
 input,

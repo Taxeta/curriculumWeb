@@ -1,0 +1,50 @@
+.main-title {
+  margin: 50px 0px 15px 250px;
+  font-size: 28px;
+  margin-left: 250px;
+}
+
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 250px;
+}
+
+.title-experience {
+  color: black;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.subtitle-experience {
+  font-family: var(--secondary-font);
+  font-size: 14px;
+  text-align: center;
+}
+
+.list-experience {
+  padding: 15px 25px 15px 15px;
+  font-family: var(--secundary-font);
+  line-height: 25px;
+}
+
+.puntos {
+  margin-right: 8px;
+}
+
+.experience-cards {
+  border: 1px solid var(--black);
+  padding: 15px;
+  margin: 0 15px 15px 0;
+  border-radius: 15px;
+  background-color: rgba(24, 128, 140, 0.411);
+  width: 400px;
+  min-height: 300px;
+}
+
+.experience-cards:hover {
+  background: linear-gradient(35deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  color: black;
+}
