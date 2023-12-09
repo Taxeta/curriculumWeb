@@ -1,6 +1,6 @@
 .projects {
   display: grid;
-  margin: 50px 0 50px 250px;
+  margin: 25px 0 50px 250px;
   justify-content: center;
   justify-items: center;
   min-height: 100vh;
@@ -8,7 +8,7 @@
 
 .projects-title {
   display: flex;
-  margin: 25px 25px 25px 250px;
+  margin: 25px 25px 0 250px;
   text-align: center;
   padding: 10px;
   border-bottom: 1px solid white;
@@ -16,19 +16,16 @@
 
 .title-project {
   margin-top: 15px;
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   font-weight: bold;
+  font-size: 18px;
 }
 
 .images-container {
-  width: 50%;
-  height: 40%;
-  max-height: 50%;
-  max-width: 80%;
   margin-bottom: 25px;
 }
 
-.container-galaxyproject {
+.container-project {
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -36,7 +33,6 @@
   align-items: center;
   gap: 25px;
   text-align: center;
-  min-height: 650px;
 }
 
 .solid-icon-button {
@@ -49,7 +45,8 @@
   align-items: center;
 }
 
-.experience-content {
+.project-content {
+  padding: 15px 0 0 0;
   min-height: 100vh;
 }
 

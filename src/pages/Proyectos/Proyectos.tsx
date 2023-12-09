@@ -3,10 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import galaxylogin from "../../assets/galaxylogin.png";
 import galaxy1 from "../../assets/galaxy1.png";
 import galaxy2 from "../../assets/galaxy2.png";
+import galaxy3 from "../../assets/galaxy-form.png";
 import carrito1 from "../../assets/carrito-compra1.png";
 import carrito2 from "../../assets/carrito-compra2.png";
-import carrito3 from "../../assets/carrito-compra4.png";
+import carrito3 from "../../assets/carrito-compra3.png";
+import carrito4 from "../../assets/carrito-compra4.png";
 import cartVideo from "../../assets/carritoVideo.mp4";
+import galaxyPadelVideo from "../../assets/GalaxyPadelVideo.mp4";
 import github from "../../assets/github.png";
 import app from "../../assets/app.png";
 import nextarrow from "../../assets/next-arrow.png";
@@ -20,15 +23,17 @@ interface projectsStructure {
 
 const projectGalaxyData: projectsStructure[] = [
   { tipo: "imagen", contenido: galaxylogin },
-  { tipo: "imagen", contenido: galaxy1 },
   { tipo: "imagen", contenido: galaxy2 },
-  { tipo: "imagen", contenido: "" },
+  { tipo: "imagen", contenido: galaxy1 },
+  { tipo: "imagen", contenido: galaxy3 },
+  { tipo: "video", contenido: galaxyPadelVideo },
 ];
 
 const projectShoppData: projectsStructure[] = [
   { tipo: "imagen", contenido: carrito1 },
   { tipo: "imagen", contenido: carrito2 },
   { tipo: "imagen", contenido: carrito3 },
+  { tipo: "imagen", contenido: carrito4 },
   { tipo: "video", contenido: cartVideo },
 ];
 
@@ -61,10 +66,10 @@ const Proyectos = (): React.ReactElement => {
   };
 
   return (
-    <div className="experience-content">
+    <div className="project-content">
       <h2 className="projects-title">Proyectos</h2>
       <div className="projects">
-        <div className="container-galaxyproject">
+        <div className="container-project">
           <span className="title-project">Galaxy Padel Project</span>
           <div className="icons">
             <a
@@ -102,6 +107,8 @@ const Proyectos = (): React.ReactElement => {
                         className="images-container"
                         src={project.contenido}
                         alt={`Proyecto ${position + 1}`}
+                        width="80%"
+                        height="80%"
                       />
                     ) : (
                       <video controls width="500">
@@ -133,7 +140,7 @@ const Proyectos = (): React.ReactElement => {
             </button>
           </div>
         </div>
-        <div className="container-galaxyproject">
+        <div className="container-project">
           <span className="title-project">Shopping Cart Project</span>
           <div className="icons">
             <a
@@ -171,6 +178,8 @@ const Proyectos = (): React.ReactElement => {
                         className="images-container"
                         src={project.contenido}
                         alt={`Proyecto ${position + 1}`}
+                        width="80%"
+                        height="80%"
                       />
                     ) : (
                       <video controls width="500">
