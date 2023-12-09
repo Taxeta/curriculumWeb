@@ -17,10 +17,18 @@ const App = (): React.ReactElement => {
       />
       <Sidebar />
       <div className="body-container">
-        <Presentacion />
-        <Proyectos />
-        <Experiencia />
-        <Contacto />
+        <div id="inicio">
+          <Presentacion />
+        </div>
+        <div id="proyectos">
+          <Proyectos />
+        </div>
+        <div id="experiencia">
+          <Experiencia />
+        </div>
+        <div id="contacto">
+          <Contacto />
+        </div>
       </div>
     </main>
   );
