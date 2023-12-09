@@ -19,7 +19,10 @@ const Contacto = (): React.ReactElement => {
           josemanuelvera1991@gmail.com
         </button>
       </a>
-      <a href="www.linkedin.com/in/jose-manuel-vera-guerrero" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/jose-manuel-vera-guerrero"
+        target="_blank"
+      >
         <button className="info-button">
           <img
             className="icon-container"
