@@ -58,9 +58,9 @@ const Experiencia = (): React.ReactElement => {
           </ul>
         </article>
         <article className="experience-cards">
-          <p className="title-experience">Zemsania - Web Developer Junior</p>
+          <p className="title-experience">SetUp - Web Developer Junior</p>
           <p className="subtitle-experience">
-            Zemsania | Marzo 2021 - Noviembre 2022
+            SetUp | Marzo 2021 - Noviembre 2022
           </p>
           <ul className="list-experience">
             <li>

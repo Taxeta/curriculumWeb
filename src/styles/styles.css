@@ -6,6 +6,7 @@
   --primary-font: "Familjen Grotesk", sans-serif;
   --secondary-font: "Satoshi", sans-serif;
   --spot-image: url("../assets/puntos.png");
+  color-scheme: light dark;
 }
 
 *,

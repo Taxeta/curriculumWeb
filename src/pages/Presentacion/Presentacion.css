@@ -1,3 +1,14 @@
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 .presentacion {
   display: flex;
   flex-direction: row;
@@ -19,6 +30,7 @@
 
 .presentacion__titulo {
   font-family: var(--primary-font);
+  animation: slideIn 1s ease-in-out;
 }
 
 .presentacion__subtitulo {
@@ -27,4 +39,29 @@
 
 .presentacion__parrafo {
   font-family: var(--secondary-font);
+}
+
+.habilidades {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  width: 120vh;
+  gap: 20px;
+}
+
+.habilidades__titulo {
+  font-family: var(--secondary-font);
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  border-bottom: 1px solid white;
+}
+
+.habilidades__iconos {
+  display: grid;
+  grid-template-columns: repeat(4, 3fr);
+  gap: 15px;
+  padding: 15px;
+  align-items: center;
+  justify-items: center;
 }

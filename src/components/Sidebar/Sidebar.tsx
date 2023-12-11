@@ -12,12 +12,15 @@ const Sidebar = (): React.ReactElement => {
     <ul className="horitzontal-nav">
       <li
         className={
-          activeSection === "inicio"
+          activeSection === "presentacion"
             ? "horitzontal-nav--items__active"
             : "horitzontal-nav--items"
         }
       >
-        <a href="#inicio" onClick={() => handleActiveReference("inicio")}>
+        <a
+          href="#presentacion"
+          onClick={() => handleActiveReference("presentacion")}
+        >
           Presentación
         </a>
       </li>

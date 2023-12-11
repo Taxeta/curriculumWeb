@@ -12,8 +12,8 @@ import cartVideo from "../../assets/carritoVideo.mp4";
 import galaxyPadelVideo from "../../assets/GalaxyPadelVideo.mp4";
 import github from "../../assets/github.png";
 import app from "../../assets/app.png";
-import nextarrow from "../../assets/next-arrow.png";
-import previousarrow from "../../assets/previous-arrow.png";
+import nextarrow from "../../assets/next.png";
+import previousarrow from "../../assets/previous.png";
 import "./Proyectos.css";
 
 interface projectsStructure {

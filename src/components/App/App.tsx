@@ -17,7 +17,7 @@ const App = (): React.ReactElement => {
       />
       <Sidebar />
       <div className="body-container">
-        <div id="inicio">
+        <div id="presentacion">
           <Presentacion />
         </div>
         <div id="proyectos">
