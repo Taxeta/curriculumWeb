@@ -54,3 +54,23 @@
   background: linear-gradient(35deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
   color: black;
 }
+
+@media (max-width: 767px) {
+  .experience-container {
+    margin: 0;
+    max-width: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-title {
+    margin: 0 0 25px 0;
+    width: 100%;
+  }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+  }
+}

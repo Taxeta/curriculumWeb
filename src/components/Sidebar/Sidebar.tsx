@@ -1,20 +1,26 @@
 import "./Sidebar.css";
 import { useState } from "react";
 
-const Sidebar = (): React.ReactElement => {
+interface sidebarProp {
+  isOpen: boolean;
+}
+
+const Sidebar = ({ isOpen }: sidebarProp): React.ReactElement => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
   const handleActiveReference = (section: string) => {
     setActiveSection(section);
   };
 
+  const backgroundClass = isOpen ? "vertical-nav-open" : "vertical-nav";
+
   return (
-    <ul className="horitzontal-nav">
+    <ul className={backgroundClass}>
       <li
         className={
           activeSection === "presentacion"
-            ? "horitzontal-nav--items__active"
-            : "horitzontal-nav--items"
+            ? "vertical-nav--items__active"
+            : "vertical-nav--items"
         }
       >
         <a
@@ -27,8 +33,8 @@ const Sidebar = (): React.ReactElement => {
       <li
         className={
           activeSection === "proyectos"
-            ? "horitzontal-nav--items__active"
-            : "horitzontal-nav--items"
+            ? "vertical-nav--items__active"
+            : "vertical-nav--items"
         }
       >
         <a href="#proyectos" onClick={() => handleActiveReference("proyectos")}>
@@ -38,8 +44,8 @@ const Sidebar = (): React.ReactElement => {
       <li
         className={
           activeSection === "experiencia"
-            ? "horitzontal-nav--items__active"
-            : "horitzontal-nav--items"
+            ? "vertical-nav--items__active"
+            : "vertical-nav--items"
         }
       >
         <a
@@ -52,8 +58,8 @@ const Sidebar = (): React.ReactElement => {
       <li
         className={
           activeSection === "contacto"
-            ? "horitzontal-nav--items__active"
-            : "horitzontal-nav--items"
+            ? "vertical-nav--items__active"
+            : "vertical-nav--items"
         }
       >
         <a href="#contacto" onClick={() => handleActiveReference("contacto")}>
