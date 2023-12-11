@@ -23,3 +23,13 @@
   padding: 10px;
   border-radius: 50%;
 }
+
+@media (max-width: 767px) {
+  .info-contact {
+    margin: 0;
+    padding: 25px;
+    width: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+  }
+}

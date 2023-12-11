@@ -68,3 +68,17 @@
 .buttons-container {
   display: flex;
 }
+
+@media (max-width: 767px) {
+  .projects {
+    margin: 0;
+  }
+
+  .projects-title {
+    margin: 0;
+  }
+
+  .project-content {
+    padding: 25px;
+  }
+}

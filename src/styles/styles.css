@@ -12,7 +12,7 @@
 *,
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 html {
@@ -25,7 +25,6 @@ body {
   margin: 0;
   font-family: var(--secondary-font);
   color: var(--white);
-  background-size: auto;
   background: var(--primary-color);
 }
 
@@ -64,4 +63,12 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 767px) {
+  body {
+    max-width: 767px;
+    max-height: 100%;
+    background: white;
+  }
 }
