@@ -1,6 +1,7 @@
 .body-container {
   padding: 25px;
-  width: 100%;
+  width: fit-content;
+  background: var(--primary-color);
 }
 
 .main-container {
