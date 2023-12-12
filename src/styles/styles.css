@@ -25,7 +25,7 @@ body {
   margin: 0;
   font-family: var(--secondary-font);
   color: var(--white);
-  background: var(--primary-color);
+  background: var(--white);
 }
 
 ul,
