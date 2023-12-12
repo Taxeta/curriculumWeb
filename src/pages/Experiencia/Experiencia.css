@@ -45,7 +45,7 @@
   padding: 15px;
   margin: 0 15px 15px 0;
   border-radius: 15px;
-  background-color: rgba(24, 128, 140, 0.411);
+  background: linear-gradient(35deg, #2a2d3e, #fecb6e);
   width: 400px;
   min-height: 300px;
 }
