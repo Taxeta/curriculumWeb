@@ -25,16 +25,18 @@
 }
 
 .presentacon-img {
-  border: 1px solid rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(49, 48, 48, 0.7);
 }
 
 .presentacion__titulo {
   font-family: var(--primary-font);
   animation: slideIn 1s ease-in-out;
+  font-size: 34px;
 }
 
 .presentacion__subtitulo {
-  font-family: var(--primary-font);
+  font-family: var(--secondary-font);
+  font-size: 24px;
 }
 
 .presentacion__parrafo {
@@ -53,7 +55,7 @@
   padding: 10px;
   font-weight: bold;
   font-size: 24px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .habilidades__iconos {

@@ -11,18 +11,20 @@
   margin: 25px 25px 0 250px;
   text-align: center;
   padding: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .title-project {
   margin-top: 15px;
   font-family: var(--primary-font);
   font-weight: bold;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 .images-container {
   margin-bottom: 25px;
+  border: 3px solid rgb(223, 223, 208);
+  border-radius: 25px;
 }
 
 .container-project {
@@ -40,7 +42,7 @@
   border: hidden;
   border-radius: 50%;
   padding: 10px;
-  background-color: white;
+  background-color: rgb(223, 223, 208);
   margin: 15px;
   align-items: center;
 }
@@ -55,7 +57,7 @@
   border: hidden;
   padding: 10px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(223, 223, 208);
   align-items: center;
 }
 

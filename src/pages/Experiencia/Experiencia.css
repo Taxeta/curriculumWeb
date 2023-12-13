@@ -7,7 +7,7 @@
   font-size: 24px;
   margin-left: 250px;
   padding: 10px;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .experience-container {
@@ -46,13 +46,13 @@
   padding: 15px;
   margin: 0 15px 15px 0;
   border-radius: 15px;
-  background: linear-gradient(35deg, #2a2d3e, #fecb6e);
+  background: linear-gradient(35deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
   width: 400px;
   min-height: 300px;
 }
 
 .experience-cards:hover {
-  background: linear-gradient(35deg, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  background: linear-gradient(35deg, #ffefba, #ffffff);
   color: black;
 }
 

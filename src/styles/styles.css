@@ -1,5 +1,5 @@
 :root {
-  --primary-color: linear-gradient(35deg, #f7f5e6, #52658f, #333a56);
+  --primary-color: rgb(250, 251, 253);
   --secondary-color: #264867;
   --black: rgb(27, 27, 27);
   --white: #f1e6e6;
@@ -24,7 +24,7 @@ html {
 body {
   margin: 0;
   font-family: var(--secondary-font);
-  color: var(--white);
+  color: var(--black);
   background: var(--white);
   zoom: 100%;
 }
