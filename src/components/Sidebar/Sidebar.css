@@ -8,19 +8,19 @@
 
 .vertical-nav--items {
   margin-bottom: 50px;
-  color: #97a8b5;
+  color: #899dad;
   font-size: larger;
 }
 
 .vertical-nav--items__active {
-  background: linear-gradient(35deg, #8e9eab, #eef2f3);
+  background: linear-gradient(35deg, #8e9eab7b, #eef2f36d);
   margin-bottom: 50px;
   font-size: larger;
   padding-left: 10px;
   color: black;
   padding: 10px;
   border-radius: 25px;
-  border: 1px solid rgb(174, 171, 171);
+  border: 0px solid rgb(174, 171, 171);
 }
 
 .vertical-nav--items:hover {
