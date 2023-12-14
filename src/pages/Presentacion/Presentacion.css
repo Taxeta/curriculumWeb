@@ -31,7 +31,7 @@
 .presentacion__titulo {
   font-family: var(--primary-font);
   animation: slideIn 1s ease-in-out;
-  font-size: 34px;
+  font-size: 46px;
 }
 
 .presentacion__subtitulo {
