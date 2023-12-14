@@ -36,10 +36,9 @@ const Presentacion = (): React.ReactElement => {
           <p className="presentacion__introduccion">
             Bienvenidos a mi porfolio, soy...
           </p>
-          <h1 className="presentacion__titulo">Jose Manuel Vera Guerrero</h1>
+          <h1 className="presentacion__titulo">Jose Manuel Vera</h1>
           <h2 className="presentacion__subtitulo">
-            Junior especialista Front-end, enfocado en Stack MERN aunque capaz
-            de adaptarme a cualquier tecnología.
+            Junior especialista Front-end, enfocado en Stack MERN
           </h2>
           <article className="presentacion__parrafo">
             <p>
@@ -57,6 +56,10 @@ const Presentacion = (): React.ReactElement => {
               Es por eso que una vez encuentro la solución, hago pruebas
               unitarias y de integración para verificar la correcta
               funcionalidad.
+            </p>
+            <p>
+              Soy resolutivo, no tomo decisiones a la ligera y tengo la
+              capacidad de adaptarme a cualquier tecnología.
             </p>
           </article>
         </div>
