@@ -6,8 +6,11 @@
   color: var(--black);
   width: 75%;
   padding: 20px;
-  border-top: 1px solid black;
   justify-items: center;
+}
+
+.info-container {
+  border-top: 1px solid black;
 }
 
 .info-button {
@@ -28,8 +31,13 @@
   .info-contact {
     margin: 0;
     padding: 25px;
-    width: 100vh;
+    min-width: 100vh;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
+  }
+
+  .info-container {
+    width: 100%;
+    border-top: 1px solid black;
   }
 }
