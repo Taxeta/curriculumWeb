@@ -24,13 +24,11 @@
   .main-container {
     display: flex;
     flex-direction: column;
-    min-width: fit-content;
-    max-width: fit-content;
+    width: fit-content;
     background: var(--primary-color);
   }
 
   .body-container {
     padding: 0;
-    width: 100%;
   }
 }

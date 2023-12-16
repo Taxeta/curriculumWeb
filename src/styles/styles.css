@@ -18,6 +18,7 @@
 html {
   padding: 0;
   margin: 0;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
@@ -26,7 +27,6 @@ body {
   font-family: var(--secondary-font);
   color: var(--black);
   background: var(--white);
-  zoom: 100%;
 }
 
 ul,
@@ -68,9 +68,9 @@ a {
 
 @media (max-width: 767px) {
   body {
-    max-width: 767px;
+    width: 100%;
     max-height: 100%;
-    min-zoom: 100vh;
+    zoom: 55%;
     background: white;
   }
 }
