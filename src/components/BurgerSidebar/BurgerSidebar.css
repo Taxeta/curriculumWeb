@@ -1,4 +1,9 @@
 .burger-container {
   position: fixed;
-  margin: 25px;
+  width: 100%;
+  height: 100vh;
+}
+
+.burger-button {
+  margin: 25px 0 0 25px;
 }
