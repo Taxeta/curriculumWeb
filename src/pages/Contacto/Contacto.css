@@ -31,7 +31,7 @@
   .info-contact {
     margin: 0;
     padding: 25px;
-    min-width: 100vh;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 2fr);
   }

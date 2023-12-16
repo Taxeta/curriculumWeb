@@ -82,6 +82,6 @@
 
   .project-content {
     padding: 25px;
-    min-width: 320px;
+    width: 100%;
   }
 }
