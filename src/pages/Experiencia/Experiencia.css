@@ -67,12 +67,27 @@
   .main-title {
     margin: 0 0 25px 0;
     width: 100%;
+    padding: 10px 0;
+    font-size: 36px;
   }
+
   .experience {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 25px;
     min-width: 320px;
+  }
+
+  .list-experience {
+    font-size: 20px;
+  }
+
+  .title-experience {
+    font-size: 28px;
+  }
+
+  .subtitle-experience {
+    font-size: 17px;
   }
 }

@@ -18,6 +18,10 @@
   width: 100vh;
 }
 
+.presentacion__introduccion {
+  font-size: 20px;
+}
+
 .presentacion-container {
   display: flex;
   flex-direction: column;
@@ -41,6 +45,7 @@
 
 .presentacion__parrafo {
   font-family: var(--secondary-font);
+  font-size: 18px;
 }
 
 .habilidades {
@@ -83,7 +88,28 @@
     padding: 25px;
   }
 
+  .habilidades__titulo {
+    padding: 10px 0;
+    font-size: 36px;
+  }
+
   .habilidades__iconos {
     grid-template-columns: repeat(3, 3fr);
+  }
+
+  .presentacion__titulo {
+    font-size: 52px;
+  }
+
+  .presentacion__subtitulo {
+    font-size: 32px;
+  }
+
+  .presentacion__parrafo {
+    font-size: 24px;
+  }
+
+  .presentacion__introduccion {
+    font-size: 22px;
   }
 }
