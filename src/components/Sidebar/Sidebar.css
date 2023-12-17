@@ -13,14 +13,14 @@
 }
 
 .vertical-nav--items__active {
-  background: linear-gradient(35deg, #8e9eab7b, #eef2f36d);
+  background: rgb(220, 211, 211);
   margin-bottom: 50px;
   font-size: larger;
   padding-left: 10px;
   color: black;
   padding: 10px;
-  border-radius: 25px;
-  border: 0px solid rgb(174, 171, 171);
+  border-radius: 10px;
+  border: 1px solid rgba(174, 171, 171, 0.363);
 }
 
 .vertical-nav--items:hover {
@@ -28,10 +28,11 @@
 }
 
 .vertical-nav-open {
-  background-color: rgba(220, 211, 211, 0.712);
+  background-color: rgba(220, 211, 211, 0.559);
   padding: 25px;
   margin: 0;
   height: 70vh;
+  width: 55rem;
 }
 
 @media (max-width: 767px) {
