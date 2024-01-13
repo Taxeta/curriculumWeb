@@ -8,9 +8,15 @@ import carrito1 from "../../assets/carrito-compra1.png";
 import carrito2 from "../../assets/carrito-compra2.png";
 import carrito3 from "../../assets/carrito-compra3.png";
 import carrito4 from "../../assets/carrito-compra4.png";
+import library1 from "../../assets/libreria-1.png";
+import library2 from "../../assets/libreria-2.png";
+import library3 from "../../assets/libreria-3.png";
+import library4 from "../../assets/libreria-4.png";
+import library5 from "../../assets/libreria-5.png";
 import cartVideo from "../../assets/carritoVideo.mp4";
 import galaxyPadelVideo from "../../assets/GalaxyPadelVideo.mp4";
 import github from "../../assets/github.png";
+import backend from "../../assets/backend.png";
 import app from "../../assets/app.png";
 import nextarrow from "../../assets/next.png";
 import previousarrow from "../../assets/previous.png";
@@ -37,9 +43,18 @@ const projectShoppData: projectsStructure[] = [
   { tipo: "video", contenido: cartVideo },
 ];
 
+const projectLibrary: projectsStructure[] = [
+  { tipo: "imagen", contenido: library1 },
+  { tipo: "imagen", contenido: library2 },
+  { tipo: "imagen", contenido: library3 },
+  { tipo: "imagen", contenido: library4 },
+  { tipo: "imagen", contenido: library5 },
+];
+
 const Proyectos = (): React.ReactElement => {
   const [galaxyIndex, setGalaxyIndex] = useState(0);
   const [cartIndex, setCartIndex] = useState(0);
+  const [libraryIndex, setLibraryIndex] = useState(0);
 
   const handleGalaxyNextButton = () => {
     setGalaxyIndex((previousIndex) =>
@@ -65,6 +80,18 @@ const Proyectos = (): React.ReactElement => {
     );
   };
 
+  const handleLibraryNextButton = () => {
+    setLibraryIndex((previousIndex) =>
+      previousIndex === projectGalaxyData.length - 1 ? 0 : previousIndex + 1,
+    );
+  };
+
+  const handleLibraryPreviousButton = () => {
+    setLibraryIndex((previousIndex) =>
+      previousIndex === 0 ? projectGalaxyData.length - 1 : previousIndex - 1,
+    );
+  };
+
   return (
     <div className="project-content">
       <h2 className="projects-title">Proyectos</h2>
@@ -79,6 +106,15 @@ const Proyectos = (): React.ReactElement => {
             >
               <button className="icon-button">
                 <img src={github} alt="github icon" width={28} height={28} />
+              </button>
+            </a>
+            <a
+              href="https://github.com/Taxeta/GalaxyPadel-back.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={backend} alt="backend icon" width={28} height={28} />
               </button>
             </a>
             <a
@@ -207,6 +243,77 @@ const Proyectos = (): React.ReactElement => {
             <button
               className="solid-icon-button"
               onClick={handleShoppCartNextButton}
+            >
+              <img src={nextarrow} alt="next arrow" width={38} height={38} />
+            </button>
+          </div>
+        </div>
+        <div className="container-project">
+          <span className="title-project">Libreria Midu</span>
+          <div className="icons">
+            <a
+              href="https://github.com/Taxeta/libreria-midu.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={github} alt="github icon" width={28} height={28} />
+              </button>
+            </a>
+            <a
+              href="https://libreria-midu.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="icon-button">
+                <img src={app} alt="app icon" width={28} height={28} />
+              </button>
+            </a>
+          </div>
+          <AnimatePresence mode="wait">
+            {projectLibrary.map(
+              (project, position) =>
+                position === libraryIndex && (
+                  <motion.div
+                    key={position}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    style={{ display: "flex", justifyContent: "center" }}
+                  >
+                    {project.tipo === "imagen" && project.contenido !== "" ? (
+                      <img
+                        className="images-container"
+                        src={project.contenido}
+                        alt={`Proyecto ${position + 1}`}
+                        width="80%"
+                        height="80%"
+                      />
+                    ) : (
+                      <video controls width="500">
+                        <source src={project.contenido} type="video/mp4" />
+                        Tu navegador no soporta el video.
+                      </video>
+                    )}
+                  </motion.div>
+                ),
+            )}
+          </AnimatePresence>
+          <div className="buttons-container">
+            <button
+              className="solid-icon-button"
+              onClick={handleLibraryPreviousButton}
+            >
+              <img
+                src={previousarrow}
+                alt="previous arrow"
+                width={38}
+                height={38}
+              />
+            </button>
+            <button
+              className="solid-icon-button"
+              onClick={handleLibraryNextButton}
             >
               <img src={nextarrow} alt="next arrow" width={38} height={38} />
             </button>

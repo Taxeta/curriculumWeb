@@ -38,28 +38,36 @@ const Presentacion = (): React.ReactElement => {
           </p>
           <h1 className="presentacion__titulo">Jose Manuel Vera</h1>
           <h2 className="presentacion__subtitulo">
-            Junior especialista Front-end, enfocado en Stack MERN
+            Web Developer Fullstack especializado en Stack MERN
           </h2>
           <article className="presentacion__parrafo">
             <p>
-              La enseñanza más grande que he aprendido de la programación hasta
-              ahora es en esencia la habilidad de solucionar cualquier problema
-              digital utilizando la lógica y el código como herramientas.
+              Formado en{" "}
+              <strong>ISDI Coders, mejor bootcamp SwitchUp 2023</strong>
             </p>
             <p>
-              Para mi cada línea de código es un paso más hacia la solución de
-              un rompecabezas. Todo esto implica realizar un análisis de los
-              problemas y diseñar algoritmos eficaces para encontrar una
-              solución.
+              He adquirido la{" "}
+              <strong>capacidad de resolver problemas digitales </strong>
+              utilizando la lógica y la programación como herramientas
+              fundamentales.
             </p>
             <p>
-              Es por eso que una vez encuentro la solución, hago pruebas
-              unitarias y de integración para verificar la correcta
-              funcionalidad.
+              Cada línea de código que escribo es como un paso hacia la
+              resolución de un rompecabezas digital. Mi enfoque implica un
+              <strong> análisis minucioso</strong> de los problemas, seguido del
+              diseño de algoritmos eficaces para encontrar soluciones.
             </p>
             <p>
-              Soy resolutivo, no tomo decisiones a la ligera y tengo la
-              capacidad de adaptarme a cualquier tecnología.
+              Una vez encuentro la solución, hago{" "}
+              <strong>pruebas unitarias, de integración y end-to-end</strong>{" "}
+              para verificar la correcta funcionalidad del código.
+            </p>
+            <p>
+              Soy una persona <strong>resolutiva</strong> que no toma decisiones
+              a la ligera. Mi capacidad para adaptarme a cualquier tecnología me
+              permite abordar una amplia gama de desafíos. Estoy comprometido
+              con la <strong>excelencia</strong> y la{" "}
+              <strong>mejora continua</strong> en mi trabajo.
             </p>
           </article>
         </div>
