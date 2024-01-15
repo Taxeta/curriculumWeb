@@ -33,9 +33,6 @@ const Presentacion = (): React.ReactElement => {
           }}
         />
         <div className="presentacion-container">
-          <p className="presentacion__introduccion">
-            Bienvenidos a mi porfolio, soy...
-          </p>
           <h1 className="presentacion__titulo">Jose Manuel Vera</h1>
           <h2 className="presentacion__subtitulo">
             Web Developer Fullstack especializado en Stack MERN
