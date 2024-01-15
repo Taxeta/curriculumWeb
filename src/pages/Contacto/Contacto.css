@@ -1,16 +1,12 @@
 .info-contact {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: 50px 0 0 250px;
   gap: 25px;
   color: var(--black);
+  margin: 50px 0 0 250px;
   width: 75%;
   padding: 20px;
   justify-items: center;
-}
-
-.info-container {
-  border-top: 1px solid black;
 }
 
 .info-button {
@@ -38,6 +34,5 @@
 
   .info-container {
     width: 100%;
-    border-top: 1px solid black;
   }
 }
