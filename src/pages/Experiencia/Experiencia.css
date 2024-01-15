@@ -15,6 +15,7 @@
   grid-template-columns: repeat(2, 1fr);
   margin-left: 250px;
   justify-items: center;
+  border-bottom: 1px solid black;
 }
 
 .title-experience {
@@ -62,6 +63,7 @@
     max-width: 100vh;
     display: flex;
     flex-direction: column;
+    border-bottom: 0;
   }
 
   .main-title {
@@ -75,8 +77,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 25px;
+    margin: 25px;
     min-width: 320px;
+    border-bottom: 1px solid black;
   }
 
   .list-experience {

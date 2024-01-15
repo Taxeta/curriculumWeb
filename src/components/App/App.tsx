@@ -51,6 +51,12 @@ const App = (): React.ReactElement => {
             <div id="contacto">
               <Contacto />
             </div>
+            <div className="footer">
+              <span>
+                Copyright © {new Date().getFullYear()}. Todos los derechos
+                reservados.
+              </span>
+            </div>
           </div>
         </>
       )}
