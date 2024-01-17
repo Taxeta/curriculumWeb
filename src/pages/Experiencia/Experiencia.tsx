@@ -7,6 +7,74 @@ const Experiencia = (): React.ReactElement => {
       <h3 className="main-title">Experiencia</h3>
       <section className="experience-container">
         <article className="experience-cards">
+          <p className="title-experience">Proyectos Freelance</p>
+          <p className="subtitle-experience">
+            Freelance | Noviembre 2023 - Actualidad
+          </p>
+          <ul className="list-experience">
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Typescript, React, Firebase, Redux, Jest, Vite.
+            </li>
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Proyectos web para pequeñas empresas
+            </li>
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Buenas prácticas, CI/CD y codigo sostenible.
+            </li>
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Control de versiones Github, plantillas con figma.
+            </li>
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Accesibilidad enfocada al usuario.
+            </li>
+            <li>
+              <img
+                className="puntos"
+                src={puntos}
+                width={12}
+                height={12}
+                alt="puntos"
+              />
+              Unit Test, Integration Test, End-to-End Test (cypress y Jest).
+            </li>
+          </ul>
+        </article>
+        <article className="experience-cards">
           <p className="title-experience">Isdi Coders Bootcamp - Prácticas</p>
           <p className="subtitle-experience">
             Isdi Coders | Enero 2023 - Septiembre 2023
@@ -57,78 +125,11 @@ const Experiencia = (): React.ReactElement => {
             </li>
           </ul>
         </article>
-        <article className="experience-cards">
-          <p className="title-experience">SetUp - Web Developer Junior</p>
-          <p className="subtitle-experience">
-            SetUp | Junio 2021 - Noviembre 2022
-          </p>
-          <ul className="list-experience">
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Typescript, React, Firebase, Redux, Jest, Vite.
-            </li>
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Trabajo en equipo 4-6 personas.
-            </li>
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Daily Scrum meets.
-            </li>
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Control de versiones Github.
-            </li>
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Corrección y refactorización de código.
-            </li>
-            <li>
-              <img
-                className="puntos"
-                src={puntos}
-                width={12}
-                height={12}
-                alt="puntos"
-              />
-              Unit Test, Integration Test, End-to-End Test.
-            </li>
-          </ul>
-        </article>
+
         <article className="experience-cards">
           <p className="title-experience">Dependiente - Encargado</p>
           <p className="subtitle-experience">
-            Casa Ametller | Enero 2019 - Julio 2020
+            Casa Ametller | Enero 2019 - Diciembre 2022
           </p>
           <ul className="list-experience">
             <li>
