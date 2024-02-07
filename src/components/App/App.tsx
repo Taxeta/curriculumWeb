@@ -18,7 +18,11 @@ const App = (): React.ReactElement => {
         className="progress-bar"
         style={{ scaleX: scrollYProgress }}
       />
-      {isMobile ? <BurgerSidebar /> : <Sidebar isOpen={false} />}
+      {isMobile ? (
+        <BurgerSidebar />
+      ) : (
+        <Sidebar isOpen={false} closeSideBar={() => {}} />
+      )}
       <div className="body-container">
         <div id="presentacion">
           <Presentacion />

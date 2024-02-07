@@ -1,16 +1,26 @@
+import { useLocation } from "react-router-dom";
 import "./Sidebar.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 interface sidebarProp {
   isOpen: boolean;
+  closeSideBar: () => void;
 }
 
-const Sidebar = ({ isOpen }: sidebarProp): React.ReactElement => {
-  const [activeSection, setActiveSection] = useState<string | null>(null);
+const Sidebar = ({ isOpen, closeSideBar }: sidebarProp): React.ReactElement => {
+  const location = useLocation();
+  const [activeSection, setActiveSection] = useState<string | null>(
+    location.pathname.slice(1),
+  );
 
   const handleActiveReference = (section: string) => {
     setActiveSection(section);
+    closeSideBar();
   };
+
+  useEffect(() => {
+    setActiveSection(location.pathname.slice(1));
+  }, [location.pathname]);
 
   const backgroundClass = isOpen ? "vertical-nav-open" : "vertical-nav";
 

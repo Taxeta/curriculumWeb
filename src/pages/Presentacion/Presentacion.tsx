@@ -1,4 +1,4 @@
-import fotoCV from "../../assets/fotoCV.jpg";
+import fotoCV from "../../assets/fotoCV.png";
 import { motion } from "framer-motion";
 import javascript from "../../assets/javascript.png";
 import mongodb from "../../assets/mongoDB.png";
@@ -13,25 +13,33 @@ import cypress from "../../assets/crypress.png";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import nextjs from "../../assets/nextJs.png";
+import jvlogo from "../../assets/jv-logo.png";
 import "./Presentacion.css";
 
 const Presentacion = (): React.ReactElement => {
   return (
     <>
       <section className="presentacion">
-        <motion.img
-          className="presentacon-img"
-          src={fotoCV}
-          alt="foto jose manuel"
-          width={"260"}
-          height={"270"}
-          transition={{ duration: 3 }}
-          animate={{
-            scale: [1, 1.2, 1.2, 1, 1],
-            rotate: [0, 30, 30, 30, 0],
-            borderRadius: ["0%", "10%", "30%", "40%", "50%"],
-          }}
-        />
+        <div className="presentacion__marca-personal">
+          <motion.img
+            className="presentacion__img"
+            src={fotoCV}
+            alt="foto jose manuel"
+            width={"260"}
+            height={"270"}
+            transition={{ duration: 3 }}
+            animate={{
+              scale: [1, 1.2, 1.2, 1, 1],
+              rotate: [0, 30, 30, 30, 0],
+              borderRadius: ["0%", "10%", "30%", "40%", "50%"],
+            }}
+          />
+          <img
+            className="presentacion__logo"
+            src={jvlogo}
+            alt="jose vera developer logo"
+          />
+        </div>
         <div className="presentacion-container">
           <h1 className="presentacion__titulo">Jose Manuel Vera</h1>
           <h2 className="presentacion__subtitulo">
